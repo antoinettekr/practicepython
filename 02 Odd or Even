@@ -1,0 +1,29 @@
+num = input("Pick a number you want to divide \n")
+check = input ("Pick a number you want to divide by \n")
+answer = float(num) % float(check)
+if answer == 0:
+    print (num + " can be divided by " + check)
+else:
+    print (num + " can't be divided by " + check)
+mod = float(num) % 2
+if mod > 0:
+    print (num + " is an odd number")
+else:
+    print (num + " is an even number")
+four = float(num) % 4
+if four > 0:
+    print (num + " can't be divided by four")
+else:
+    print (num + " can be divided by four")
+cmod = float(check) % 2
+if cmod > 0:
+    print (check + " is an odd number")
+else:
+    print (check + " is an even number")
+cfour = float(check) % 4
+if cfour > 0:
+    print (check + " can't be divided by four")
+else:
+    print (check + " can be divided by four")
+ultimate = float(num) / float(check)
+print (num + " divided by " + check + " is " + str(ultimate))
