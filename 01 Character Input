@@ -1,0 +1,35 @@
+naam = input ("Hoi, hoe heet jij? Gebruik een hoofdletter a.u.b. \n")
+age = int(input ("Dankjewel. Hoe oud ben je? \n"))
+year = str((2018 - age) + 100)
+numcopy = int(input("Mooi zo. Kies nu een getal tussen 0 en 10 \n"))
+if naam == "Rik":
+    print ("Jij bent leuk")
+if naam == "Gerald":
+    print ("Dag grote broer")
+if naam == "Elke":
+    print ("Ik zwaai naar je met mijn babyarm")
+if naam == "Hester":
+    print ("Je bent mijn favoriete nagelartiest")
+if naam == "Lennart":
+    print ("Wauw wat ben jij sterk")
+if naam == "Mathijs":
+    print ("Bedankt voor de Python tips!")
+if naam == "Joen":
+    print ("Bedankt voor de website met tips!")
+if naam == "Pedro":
+    print ("Hola Guapo")
+if naam == "Michelle":
+    print ("Ik heb nog een cadeautje voor je verjaardag.")
+if naam == "Marieke":
+    print ("Hallo Marieke hoe gaat het in Bonn?")
+if naam == "Mireille":
+    print ("Ik heb zin om temptation island met je te kijken")
+if naam == "Anneleen":
+    print ("Nog even oefenen en ik dan kan ik ook op de IT-afdeling van de ABN komen werken")
+if naam == "Gerrit":
+    print ("Hoi papa, ik hoop dat het na deze week wat minder druk is")
+if naam == "Rineke":
+    print ("Hoi mama, wat leuk dat je naar mijn code komt kijken!")
+print (naam + ", je wordt 100 in het jaar " + year + ", zorg dat je op tijd begint met het plannen van je feestje!") 
+print("Nu ik ga " + str(numcopy) + " keer hoi tegen je zeggen. " + str(numcopy) +" is het getal dat jij gekozen hebt.")
+print(numcopy * (" hoi \n"))
