@@ -1,0 +1,24 @@
+import random
+num = input("Kies een getal. Dit getal gebruiken we om een lijst met 25 random getallen te maken. \n")
+numtwo = input("Kies nog een getal. Dit getal gebruiken we om nog een lijst met 20 random getallen te maken. \n")
+a = random.choices(range(int(num)), k=25)
+print("Dit zijn 25 random getallen die lager zijn dan " + num + ". Deze lijst noemen we: Lijst A. Ze zijn gesorteerd van klein naar groot.")
+a.sort()
+print(a)
+b = random.choices(range(int(numtwo)), k=20)
+print("Dit zijn 20 random getallen die lager zijn dan " + numtwo + ". Deze lijst noemen we: Lijst B. Ze zijn gesorteerd van klein naar groot.")
+b.sort()
+print (b)
+c = []
+for element in a:
+    if element in b: 
+        if element not in c:
+            c.append(element)
+print("Deze getallen staan in Lijst A én Lijst B. Er staan geen dubbele getallen in. Ze zijn gesorteerd van klein naar groot. Deze lijst noemen we Lijst C.")
+print(c)
+d = []
+for element in a: 
+    if element in b:
+        d.append(element)
+print("In deze lijst staan de dubbelen er wel in.")
+print(d)
